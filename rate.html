@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Ashok Gandhi Group</title>
+   <meta http-equiv="refresh" content="10">
   <style>
     body {
       background-color: #002714;
@@ -48,7 +49,7 @@
     }
   </style>
 </head>
-<body onload="startTime()">
+<body>
   <h1>Ashok Gandhi Group</h1>
   <h2>Since 1977</h2>
   <h2 style="text-align: center;">DATE: 06/09/2024</h2>
@@ -66,23 +67,6 @@
     </div>
     <!--img src="logo.png" alt="yojna.jfif" width="550" height="500"-->
    <img src="ganapati.gif" alt="ganapati" style="width:250;height:300;">
-   <script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-  setTimeout(startTime, 1000);
-}
-
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
 
      
     <div class="card">
